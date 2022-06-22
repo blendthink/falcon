@@ -1,4 +1,5 @@
 class Log {
+  void i(Object? o) => print(o);
   void w(Object? o) => print('\x1B[33m$o\x1B[0m');
   void e(Object? o) {
     final message = '''

@@ -1,5 +1,6 @@
-import 'package:args/args.dart';
+import 'package:args/args.dart' show ArgResults;
 import 'package:args/command_runner.dart';
+import 'package:falcon/common/option.dart';
 
 abstract class CommandGroup<T extends Subcommand> extends Command {
   void addSubcommands(List<T> commands) {
@@ -42,34 +43,6 @@ abstract class Subcommand extends Command {
   ArgResults get argResults =>
       super.argResults ??
       usageException('argResults cannot be used before Command.run is called.');
-}
-
-abstract class Option<T> {
-  final String name;
-  final String? abbr;
-  final String? help;
-  final String? valueHelp;
-  final Iterable<String>? allowed;
-  final Map<String, String>? allowedHelp;
-  final String? defaultsTo;
-  final void Function(String?)? callback;
-  final bool mandatory;
-  final bool hide;
-  final List<String> aliases;
-
-  Option(
-    this.name, {
-    this.abbr,
-    this.help,
-    this.valueHelp,
-    this.allowed,
-    this.allowedHelp,
-    this.defaultsTo,
-    this.callback,
-    this.mandatory = false,
-    this.hide = false,
-    this.aliases = const [],
-  });
 }
 
 extension ArgResultsExt on ArgResults {

@@ -1,6 +1,7 @@
 import 'package:args/args.dart' show ArgResults;
 import 'package:falcon/common/command.dart';
 import 'package:falcon/google/data/status.dart';
+import 'package:falcon/common/option.dart';
 
 class StatusOption extends Option<Status> {
   static const _name = 'status';

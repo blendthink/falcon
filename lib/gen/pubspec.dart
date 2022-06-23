@@ -1,4 +1,8 @@
-name: falcon
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+import 'package:pubspec_parse/pubspec_parse.dart';
+
+final pubspec = Pubspec.parse("""name: falcon
 description: A sample command-line application.
 version: 1.0.0
 homepage: https://github.com/blendthink/falcon
@@ -23,3 +27,4 @@ dev_dependencies:
   lints: ^2.0.0
   pubspec_builder: ^1.0.0
   test: ^1.16.0
+""");

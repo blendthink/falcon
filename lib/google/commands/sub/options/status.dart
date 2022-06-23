@@ -3,7 +3,7 @@ import 'package:falcon/common/command.dart';
 import 'package:falcon/google/data/status.dart';
 import 'package:falcon/common/option.dart';
 
-class StatusOption extends Option<Status> {
+class StatusOption extends Option {
   static const _name = 'status';
 
   StatusOption()

@@ -1,4 +1,4 @@
-abstract class Option<T> {
+abstract class Option {
   final String name;
   final String? abbr;
   final String? help;

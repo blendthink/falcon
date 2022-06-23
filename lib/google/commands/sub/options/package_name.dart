@@ -2,7 +2,7 @@ import 'package:args/args.dart' show ArgResults;
 import 'package:falcon/common/command.dart';
 import 'package:falcon/common/option.dart';
 
-class PackageNameOption extends Option<String> {
+class PackageNameOption extends Option {
   static const _name = 'packageName';
 
   PackageNameOption()

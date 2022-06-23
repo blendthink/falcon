@@ -4,7 +4,7 @@ import 'package:args/args.dart' show ArgResults;
 import 'package:falcon/common/command.dart';
 import 'package:falcon/common/option.dart';
 
-class KeyPathOption extends Option<String> {
+class KeyPathOption extends Option {
   static const _name = 'keyPath';
 
   KeyPathOption()

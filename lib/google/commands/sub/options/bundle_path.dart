@@ -4,7 +4,7 @@ import 'package:args/args.dart' show ArgResults;
 import 'package:falcon/common/command.dart';
 import 'package:falcon/common/option.dart';
 
-class BundlePathOption extends Option<String> {
+class BundlePathOption extends Option {
   static const _name = 'bundlePath';
 
   BundlePathOption()

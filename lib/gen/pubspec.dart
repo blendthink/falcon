@@ -3,7 +3,7 @@
 import 'package:pubspec_parse/pubspec_parse.dart';
 
 final pubspec = Pubspec.parse("""name: falcon
-description: A sample command-line application.
+description: A command-line application for quickly uploading Flutter apps to the store.
 version: 1.0.0
 homepage: https://github.com/blendthink/falcon
 repository: https://github.com/blendthink/falcon

@@ -1,6 +1,7 @@
 name: update-pubspec
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'main'
@@ -19,7 +20,9 @@ jobs:
       - uses: dart-lang/setup-dart@v1
 
       - name: check pubspec.yaml
-        run: dart pub run build_runner build
+        run: |
+          dart pub get
+          dart pub run build_runner build
 
       # https://github.com/peter-evans/create-pull-request
       - name: create pull request

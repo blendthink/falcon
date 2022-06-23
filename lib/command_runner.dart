@@ -1,4 +1,6 @@
 import 'package:args/command_runner.dart';
+import 'package:falcon/commands/flags/version.dart';
+import 'package:falcon/common/option.dart';
 import 'package:falcon/google/commands/group/command.dart';
 
 class FalconCommandRunner extends CommandRunner<dynamic> {
@@ -7,6 +9,7 @@ class FalconCommandRunner extends CommandRunner<dynamic> {
           'falcon',
           'Tool for uploading to Google Play Store and App Store Connect',
         ) {
+    addFlags([VersionFlag()]);
     addCommand(GoogleCommandGroup());
     // TODO(blendthink): add AppleCommandGroup
   }

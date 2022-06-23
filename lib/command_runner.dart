@@ -1,5 +1,5 @@
 import 'package:args/command_runner.dart';
-import 'package:falcon/google/commands/group.dart';
+import 'package:falcon/google/commands/group/command.dart';
 
 class FalconCommandRunner extends CommandRunner<dynamic> {
   FalconCommandRunner()

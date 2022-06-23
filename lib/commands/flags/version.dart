@@ -1,3 +1,4 @@
+import 'package:args/args.dart';
 import 'package:falcon/common/option.dart';
 
 class VersionFlag extends Flag {
@@ -7,7 +8,11 @@ class VersionFlag extends Flag {
       : super(
           _name,
           abbr: 'v',
-          help: 'Print the falcon version.',
+          help: 'Print this package version.',
           negatable: false,
         );
+
+  static bool enabled(ArgResults argResults) {
+    return argResults.wasParsed(_name);
+  }
 }

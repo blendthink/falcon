@@ -35,7 +35,7 @@ abstract class Subcommand extends Command {
 
   String requireOption(Option option) {
     final value = argResults[option.name];
-    assert(value == null);
+    if (value == null) throw ArgumentError();
     return value;
   }
 

@@ -238,7 +238,7 @@ packages:
       name: json_annotation
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.5.0"
+    version: "4.8.0"
   lints:
     dependency: "direct dev"
     description:
@@ -322,7 +322,7 @@ packages:
       name: pubspec_parse
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.2.0"
+    version: "1.2.2"
   shelf:
     dependency: transitive
     description:
@@ -478,4 +478,4 @@ packages:
     source: hosted
     version: "3.1.1"
 sdks:
-  dart: ">=2.17.3 <3.0.0"
+  dart: ">=2.18.0 <3.0.0"
